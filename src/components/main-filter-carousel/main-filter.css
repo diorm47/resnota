@@ -1,0 +1,54 @@
+.rigth_arrow_filter,
+.left_arrow_filter {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding-left: 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.rigth_arrow_filter {
+  right: -60px;
+}
+
+.rigth_arrow_filter:hover,
+.left_arrow_filter:hover {
+  background: #dbdbdb6a;
+  transition: all 0.4s ease;
+}
+
+.left_arrow_filter {
+  left: -60px;
+}
+
+.slick-slide {
+  width: 285px;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .left_arrow_filter {
+    left: -60px;
+  }
+
+  .rigth_arrow_filter {
+    right: -60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left_arrow_filter {
+    left: -25px;
+  }
+
+  .rigth_arrow_filter {
+    right: -25px;
+  }
+}

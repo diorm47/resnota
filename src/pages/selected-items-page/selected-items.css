@@ -1,0 +1,147 @@
+.main_selected_block {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+}
+
+.content_block_title {
+  margin-bottom: 30px;
+}
+
+.content_block_title h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  color: #0e2149;
+}
+
+.selected_item {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #d5af8650;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+}
+.selected_item:hover {
+  border: 1px solid #d5af86d1;
+  transition: all 0.4s ease;
+}
+
+.items_inform {
+  display: flex;
+  width: 80%;
+  padding-right: 30px;
+}
+
+.s_item_img {
+  margin-right: 10px;
+}
+
+.s_item_cat_name p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #919192;
+  margin-top: 15px;
+}
+.s_item_name h4 {
+  font-size: 25px;
+  color: #0e2149;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.s_item_name h4:hover {
+  text-decoration: underline;
+  transition: all 0.4s ease;
+}
+
+.s_about p {
+  color: #59595b;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.s_cost p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #0e2149;
+}
+
+.s_buttons {
+  display: flex;
+  padding-top: 150px;
+}
+
+.s_buttons div {
+  border: 1px solid #d5af862c;
+  padding: 8px 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.remove_item {
+  background: #d5af86;
+  transition: all 0.4s ease;
+}
+
+.att_to_cart_item {
+  background: #0e2149;
+  transition: all 0.4s ease;
+}
+
+.att_to_cart_item:hover {
+  background: #1d3976;
+  transition: all 0.4s ease;
+}
+.remove_item:hover {
+  background: #eb7e3fa4;
+  transition: all 0.4s ease;
+}
+
+.null_message {
+  margin: 100px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_selected_block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .s_buttons {
+    flex-direction: column;
+  }
+  .remove_item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .items_inform {
+    flex-direction: column;
+  }
+  .selected_item {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .selected_item {
+    flex-direction: column;
+  }
+  .s_buttons {
+    padding: 20px 0;
+  }
+}

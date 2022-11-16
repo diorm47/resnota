@@ -1,0 +1,263 @@
+.modal_wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 211;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.666);
+  z-index: 221;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_block {
+  padding: 50px;
+  width: 1038px;
+  height: 700px;
+  background: #ffffff;
+  display: flex;
+  position: fixed;
+  z-index: 331;
+}
+.close_modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.modal_carousel {
+  width: 483px;
+  height: 400px;
+}
+
+.slick-slide,
+.slick-active,
+.slick-current {
+  width: 500px;
+  height: 500px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.rigth_arrow,
+.left_arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding-left: 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.rigth_arrow {
+  right: -45px;
+}
+
+.rigth_arrow:hover,
+.left_arrow:hover {
+  background: #dbdbdb;
+  transition: all 0.4s ease;
+}
+
+.left_arrow {
+  left: -45px;
+}
+
+.current_img {
+  position: relative;
+}
+
+.current_img .item_category {
+  position: absolute;
+  left: 10px;
+}
+
+.current_img .add_to_fav {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  right: 5px;
+}
+
+.current_img .add_to_fav svg * {
+  fill: #999da2;
+}
+
+.modal_descriptions {
+  padding-left: 70px;
+}
+
+.item_typee h3 {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 130%;
+  color: #0e2149;
+}
+
+.item_typee h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #0e2149;
+  margin-bottom: 14px;
+}
+
+.product_descr span {
+  font-size: 12px;
+  line-height: 130%;
+  color: #717171;
+}
+
+.product_descr p {
+  font-size: 18px;
+  line-height: 130%;
+  color: #111111;
+  margin-bottom: 6px;
+}
+
+.product_calory h4 {
+  font-size: 12px;
+  line-height: 130%;
+  color: #717171;
+  margin: 15px 0 5px;
+}
+
+.product_calory .belki,
+.fat,
+.calory {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+.product_calory div p {
+  font-size: 17px;
+  color: #111111;
+  display: flex;
+}
+
+.product_calory div .underline_dots {
+  width: 100%;
+  border-bottom: 1px dashed #b8c1ca;
+  margin-bottom: 4px;
+}
+
+.modal_item_cost p {
+  font-weight: 700;
+  font-size: 32px;
+  color: #0e2149;
+  margin-bottom: 8px;
+}
+
+.modal_item_discount strike {
+  font-size: 18px;
+  line-height: 21px;
+  color: #d5af86;
+  margin-right: 33px;
+}
+
+.modal_item_discount {
+  display: flex;
+  align-items: center;
+}
+.discount_block {
+  display: flex;
+}
+
+.modal_buy_buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.modal_buy_buttons .modal_counter,
+.modal_buy .modal_click {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.modal_counter {
+  width: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eff2f4;
+}
+
+.modal_counter p {
+  color: #0e2149;
+  font-size: 18px;
+}
+
+.modal_counter div {
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.modal_buy,
+.modal_click {
+  width: 140px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.modal_buy {
+  background: #0e2149;
+}
+.modal_click {
+  background: #d5af86;
+}
+
+.modal_buy:hover {
+  background: #1d3976;
+  transition: all 0.4s ease;
+}
+.modal_click:hover {
+  background: #eb7e3fa4;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 1080px) {
+  .modal_wrapper,
+  .fast_look {
+    display: none;
+  }
+}

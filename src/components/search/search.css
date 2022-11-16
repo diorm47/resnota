@@ -1,0 +1,32 @@
+.search_wrapper {
+  width: 100%;
+  min-height: 64vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 40px;
+}
+
+.search_wrapper .item_card {
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.search_wrapper .item_not_found {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_not_found span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ed165f;
+  margin-right: 10px;
+}

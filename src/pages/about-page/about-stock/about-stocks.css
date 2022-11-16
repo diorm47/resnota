@@ -1,0 +1,101 @@
+.stocks_wrapper {
+  margin-bottom: 70px;
+}
+
+.stocks_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.stock_cart {
+  max-width: 560px;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+}
+.stock_img {
+  margin-right: 20px;
+  outline: none;
+  transition: all 0.4s ease;
+}
+.stock_img:hover {
+  transform: scale(1.02);
+  transition: all 0.4s ease;
+}
+.stock_descriptions span {
+  font-size: 18px;
+  line-height: 130%;
+  color: #717171;
+}
+
+.stock_descriptions h4 {
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #0e2149;
+  margin: 7px 0;
+}
+
+.stock_descriptions p {
+  font-size: 15px;
+  line-height: 130%;
+  color: #111111;
+}
+
+.show_more_stocks {
+  max-width: 150px;
+  margin: 25px auto 0;
+  cursor: pointer;
+}
+
+.show_more_stocks p {
+  font-size: 20px;
+  line-height: 130%;
+  color: #0e2149;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .stocks_content {
+    grid-gap: 20px;
+  }
+  .stock_cart span {
+    font-size: 15px;
+  }
+  .stock_cart h4 {
+    margin: 4px 0;
+    font-size: 17px;
+  }
+  .stock_cart p {
+    font-size: 13px;
+  }
+  .about_wrapper {
+    padding-right: 10px;
+  }
+  .stock_img {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .stock_cart {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 670px) {
+ .stocks_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .stock_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+ }
+}

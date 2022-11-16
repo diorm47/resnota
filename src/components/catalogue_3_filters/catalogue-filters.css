@@ -1,0 +1,29 @@
+.catal_filter_title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.catal_filtering_items {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 22px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .catal_filtering_items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .catal_filtering_items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .catal_filter_title {
+    margin: 10px 0;
+  }
+}
