@@ -5,7 +5,7 @@
   height: 100%;
 }
 .product_card {
-  max-width: 387px;
+  width: 387px;
   height: 260px;
   padding: 0 0 0 27px;
   display: flex;
@@ -23,7 +23,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.second_two_col, .last_two_col {
+.second_two_col,
+.last_two_col {
   display: flex;
   width: 66%;
   justify-content: space-between;
@@ -85,6 +86,8 @@ span {
     #f7c669 0%,
     #c5624c 100%
   );
+  display: flex;
+  justify-content: space-between;
 }
 
 .milk_card {
@@ -118,9 +121,7 @@ span {
     #f3df77 0%,
     #fca727 100%
   );
-  min-width: 590px;
-  max-width: 590px;
-  grid-area: four4;
+  width: 590px;
 }
 .beer_product .card_image {
   margin-left: 150px;
@@ -131,7 +132,7 @@ span {
     #7bcac0 0%,
     #39817c 100%
   );
-  max-width: 590px;
+  width: 590px;
   grid-area: five5;
 }
 
@@ -141,7 +142,7 @@ span {
     #9dbdcf 0%,
     #374b69 100%
   );
-  min-width: 387px;
+  width: 387px;
   grid-area: six6;
 }
 
@@ -173,9 +174,6 @@ span {
   .products_cards {
     padding: 0 20px;
   }
-  .product_card {
-    margin-right: 10px;
-  }
   .first_three_col {
     flex-direction: column;
   }
@@ -183,9 +181,51 @@ span {
     width: 100%;
   }
   .meat_card {
-    width: 100%;
+    width: 95%;
+  }
+  .milk_card {
+    width: 65%;
+  }
+  .beer_product {
+    width: 50%;
+  }
+  .beer_product .card_image {
+    margin-left: 16%;
+  }
+  .cold_product {
+    width: 47%;
   }
   .sea_product {
     width: 100%;
+  }
+  .last_col {
+    flex-direction: column;
+  }
+  .last_two_col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .asal_product {
+    width: 50%;
+  }
+  .veget_product {
+    width: 47%;
+  }
+  .fruits_product {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .product_card,
+  .cold_product {
+    width: 100%;
+  }
+  .last_two_col,
+  .second_two_col,
+  .second_col {
+    flex-direction: column;
   }
 }

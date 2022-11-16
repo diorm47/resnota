@@ -27,3 +27,16 @@
     margin: 10px 0;
   }
 }
+
+@media only screen and (max-width: 650px) {
+   .catalog_contet_block {
+    align-items: center;
+    text-align: center;
+   }
+   .catal_filtering_items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+   }
+}

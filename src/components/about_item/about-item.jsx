@@ -22,7 +22,6 @@ const AboutItem = () => {
   const item = currentItems[0];
   if (!item) return <Navigate to={-1} />;
 
-  console.log(recommendItems);
   return (
     <div className="about_item_wrapper">
       <div

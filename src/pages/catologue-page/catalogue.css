@@ -229,6 +229,7 @@
   .catalog_contet_block,
   .content_top_menu {
     padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -249,7 +250,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .catalog_left_block,
   .catalogue_menu {
     width: 100%;
