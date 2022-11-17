@@ -130,9 +130,127 @@ function Navbar() {
                 <MenuBurger />
               </div>
               <div
-                className={navMenu ? "nav_list" : "nav_list hide_nav_list"}
+                className="nav_list"
                 data-aos="fade-right"
                 data-aos-duration="1000"
+              >
+                <NavLink to="/about-resnota">
+                  <div className="nav_list_item">
+                    <h4>O ресноте</h4>
+                  </div>
+                </NavLink>
+
+                <NavLink to="/catalogue">
+                  <div className="catalogue_link_menu">
+                    <div className="nav_list_item catalogue_list_item ">
+                      <h4>Каталог</h4>
+                      <MenuArrow
+                        className={!catalMenu || "reversed_icon"}
+                        onClick={catMenuToggle}
+                      />
+                    </div>
+
+                    <div
+                      className={
+                        catalMenu ? "catalogue_menu_nav" : " hide_cat_menu"
+                      }
+                    >
+                      <NavLink to="/catalogue/populars">
+                        <div className="catal_menu_item">
+                          <div className="menu_list_item">
+                            <Star />
+                            <p>Хиты продаж</p>
+                          </div>
+                        </div>
+                      </NavLink>
+
+                      <NavLink to="/catalogue/discounts">
+                        <div className="catal_menu_item">
+                          <div className="menu_list_item">
+                            <Persent />
+                            <p>Скидки</p>
+                          </div>
+                        </div>
+                      </NavLink>
+                      <NavLink to="/catalogue/new">
+                        <div className="catal_menu_item">
+                          <div className="menu_list_item">
+                            <New />
+                            <p>Новинки</p>
+                          </div>
+                        </div>
+                      </NavLink>
+
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item ">
+                          <Sausage />
+                          <p>Колбасные и мясные изделия</p>
+                        </div>
+                      </div>
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item">
+                          <Milky />
+                          <p>Молочные продукты</p>
+                        </div>
+                      </div>
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item">
+                          <Fish />
+                          <p>Морепродукты</p>
+                        </div>
+                      </div>
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item">
+                          <Beer />
+                          <p>Пиво</p>
+                        </div>
+                      </div>
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item">
+                          <Cold />
+                          <p>Замороженные продукты</p>
+                        </div>
+                      </div>
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item">
+                          <Honey />
+                          <p>Мед</p>
+                        </div>
+                      </div>
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item">
+                          <Vegetables />
+                          <p>Свежие овощи</p>
+                        </div>
+                      </div>
+                      <div className="catal_menu_item">
+                        <div className="menu_list_item">
+                          <Fruits />
+                          <p>Свежие фрукты</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
+
+                <div
+                  className="nav_list_item"
+                  onClick={() => setCatMenu(false)}
+                >
+                  <h4>Наши магазины</h4>
+                </div>
+
+                <div
+                  className="nav_list_item"
+                  onClick={() => setCatMenu(false)}
+                >
+                  <h4>Контакты</h4>
+                </div>
+              </div>
+              <div
+                className={
+                  navMenu ? "nav_list_mobile" : "nav_list_mobile hide_nav_list"
+                }
               >
                 <NavLink to="/about-resnota">
                   <div

@@ -87,3 +87,9 @@
     align-items: center;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .items_products .item_card {
+    margin-bottom: 20px;
+  }
+}

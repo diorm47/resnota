@@ -264,6 +264,9 @@ span {
 .catalogue_list_item svg {
   display: none;
 }
+.nav_list_mobile {
+  display: none;
+}
 
 @media only screen and (max-width: 1240px) {
   .top_nav {
@@ -290,6 +293,9 @@ span {
 }
 
 @media only screen and (max-width: 600px) {
+  .nav_list {
+    display: none;
+  }
   .nav_description,
   .in_basket_descr {
     display: none;
@@ -301,12 +307,13 @@ span {
   .in_cart_detector {
     display: flex;
   }
-  .nav_list {
+  .nav_list_mobile {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 19%;
-    z-index: 1111;
+    top: 129px;
+    z-index: 111;
     width: 100%;
     background: #0e2149;
     height: auto;
@@ -314,7 +321,7 @@ span {
   .nav_list_item h4 {
     font-size: 17px;
   }
-  .nav_list a {
+  .nav_list_mobile a {
     width: 100%;
   }
   .nav_list_item {
