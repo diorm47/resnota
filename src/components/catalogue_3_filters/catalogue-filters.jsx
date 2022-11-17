@@ -19,6 +19,7 @@ function CatalogueFilters({ title }) {
   } else if (title === "Новинки") {
     data = items.filter((el) => el.category === "New");
   }
+  
 
   return (
     <div className="catal_filters">

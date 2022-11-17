@@ -359,3 +359,10 @@ span {
     visibility: hidden;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .nav_search_field input {
+    text-indent: 10px;
+    font-size: 11px;
+  }
+}

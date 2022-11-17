@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.css";
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const HeaderCarousel = () => {
   useEffect(() => {
@@ -39,13 +40,15 @@ const HeaderCarousel = () => {
               колбасные и мясные изделия, хлебная и молочная продукция
             </p>
           </div>
-          <div
-            className="header_button"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <button>Купить</button>
-          </div>
+          <NavLink to="/catalogue">
+            <div
+              className="header_button"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <button>Купить</button>
+            </div>
+          </NavLink>
         </div>
       </div>
       <div className="slider_image">
@@ -67,13 +70,15 @@ const HeaderCarousel = () => {
               колбасные и мясные изделия, хлебная и молочная продукция
             </p>
           </div>
-          <div
-            className="header_button"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <button>Купить</button>
-          </div>
+          <NavLink to="/catalogue">
+            <div
+              className="header_button"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <button>Купить</button>
+            </div>
+          </NavLink>
         </div>
       </div>
       <div className="slider_image">
@@ -95,13 +100,15 @@ const HeaderCarousel = () => {
               колбасные и мясные изделия, хлебная и молочная продукция
             </p>
           </div>
-          <div
-            className="header_button"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <button>Купить</button>
-          </div>
+          <NavLink to="/catalogue">
+            <div
+              className="header_button"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <button>Купить</button>
+            </div>
+          </NavLink>
         </div>
       </div>
       <div className="slider_image">
@@ -123,13 +130,15 @@ const HeaderCarousel = () => {
               колбасные и мясные изделия, хлебная и молочная продукция
             </p>
           </div>
-          <div
-            className="header_button"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <button>Купить</button>
-          </div>
+          <NavLink to="/catalogue">
+            <div
+              className="header_button"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <button>Купить</button>
+            </div>
+          </NavLink>
         </div>
       </div>
     </Carousel>

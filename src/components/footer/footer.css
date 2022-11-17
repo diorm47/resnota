@@ -281,4 +281,13 @@ textarea {
   .footer_socials_list {
     margin: 10px 0;
   }
+  .footer_products {
+    grid-gap: 25px;
+  }
+  .site_developer p {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
 }
