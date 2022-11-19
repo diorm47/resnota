@@ -216,8 +216,11 @@
 }
 .close_filters {
   position: absolute;
-  top: -200px;
+  top: -900px;
   transition: all 0.4s ease;
+  z-index: -30;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .rotate_image {
